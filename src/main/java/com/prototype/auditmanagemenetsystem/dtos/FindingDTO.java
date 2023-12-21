@@ -22,5 +22,5 @@ public class FindingDTO {
     private String recommendation;
     private String responsibleDepartment;
     private String timeline;
-    private AuditDTO audit;
+    private Integer audit;
 }
