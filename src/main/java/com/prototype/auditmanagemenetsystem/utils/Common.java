@@ -27,14 +27,6 @@ public class Common {
                 .build();
     }
 
-    private Integer id;
-    private LocalDate startDate;
-    private LocalDate endDate;
-    private String status;
-    private UserDTO assignedBy;
-    private UserDTO assignedTo;
-    private DepartmentDTO department;
-
     public static AuditDTO convertAuditEntityToAuditDTO(AuditEntity auditEntity){
         return AuditDTO.builder()
                 .id(auditEntity.getId())

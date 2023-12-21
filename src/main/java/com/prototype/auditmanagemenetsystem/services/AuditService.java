@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface AuditService {
     ResponseDTO<List<AuditDTO>> getAllAudits();
+
+    ResponseDTO<AuditDTO> addAudit(AuditDTO auditDTO);
 }
