@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl implements UserService {
     @Override
-    public ResponseDTO<UserDTO> register(UserDTO userDTO) {
+    public ResponseDTO<UserDTO> login(UserDTO userDTO) {
         return null;
     }
 }

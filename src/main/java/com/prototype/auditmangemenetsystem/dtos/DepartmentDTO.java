@@ -2,15 +2,12 @@ package com.prototype.auditmangemenetsystem.dtos;
 
 import lombok.*;
 
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
-public class UserDTO {
+@Builder
+public class DepartmentDTO {
     private Integer id;
-    private String email;
-    private String password;
     private String name;
-    private String role;
 }

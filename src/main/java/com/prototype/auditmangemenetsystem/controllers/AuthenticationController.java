@@ -16,8 +16,8 @@ public class AuthenticationController {
 
     private final UserService userService;
 
-    @PostMapping("/register")
-    public ResponseDTO<UserDTO> register(@RequestBody UserDTO userDTO){
-        return userService.register(userDTO);
+    @PostMapping("/login")
+    public ResponseDTO<UserDTO> login(@RequestBody UserDTO userDTO){
+        return userService.login(userDTO);
     }
 }

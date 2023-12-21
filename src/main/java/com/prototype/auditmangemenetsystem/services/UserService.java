@@ -5,5 +5,5 @@ import com.prototype.auditmangemenetsystem.dtos.UserDTO;
 import org.springframework.stereotype.Service;
 
 public interface UserService {
-    ResponseDTO<UserDTO> register(UserDTO userDTO);
+    ResponseDTO<UserDTO> login(UserDTO userDTO);
 }
