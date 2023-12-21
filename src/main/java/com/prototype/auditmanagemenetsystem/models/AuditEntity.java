@@ -1,4 +1,4 @@
-package com.prototype.auditmangemenetsystem.models;
+package com.prototype.auditmanagemenetsystem.models;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

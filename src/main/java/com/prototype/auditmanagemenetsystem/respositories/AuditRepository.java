@@ -1,6 +1,6 @@
-package com.prototype.auditmangemenetsystem.respositories;
+package com.prototype.auditmanagemenetsystem.respositories;
 
-import com.prototype.auditmangemenetsystem.models.AuditEntity;
+import com.prototype.auditmanagemenetsystem.models.AuditEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

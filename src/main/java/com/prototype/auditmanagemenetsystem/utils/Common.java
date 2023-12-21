@@ -1,7 +1,7 @@
-package com.prototype.auditmangemenetsystem.utils;
+package com.prototype.auditmanagemenetsystem.utils;
 
-import com.prototype.auditmangemenetsystem.dtos.UserDTO;
-import com.prototype.auditmangemenetsystem.models.UserEntity;
+import com.prototype.auditmanagemenetsystem.dtos.UserDTO;
+import com.prototype.auditmanagemenetsystem.models.UserEntity;
 
 public class Common {
 

@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.prototype</groupId>
-	<artifactId>Audit-Mangemenet-System</artifactId>
+	<artifactId>Audit-Managemenet-System</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Audit-Mangemenet-System</name>
 	<description>Audit-Mangemenet-System</description>

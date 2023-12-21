@@ -1,4 +1,4 @@
-package com.prototype.auditmangemenetsystem.dtos;
+package com.prototype.auditmanagemenetsystem.dtos;
 
 import lombok.*;
 

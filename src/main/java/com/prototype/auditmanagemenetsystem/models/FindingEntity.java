@@ -1,13 +1,20 @@
-package com.prototype.auditmangemenetsystem.dtos;
+package com.prototype.auditmanagemenetsystem.models;
 
-import lombok.*;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@NoArgsConstructor
+@Entity
 @AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
-@Builder
-public class FindingDTO {
+@Table(name = "findings")
+public class FindingEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String formTitle;
     private String findings;
@@ -22,5 +29,8 @@ public class FindingDTO {
     private String recommendation;
     private String responsibleDepartment;
     private String timeline;
-    private AuditDTO audit;
+
+    @ManyToOne
+    @JoinColumn(name = "audit_id")
+    private AuditEntity audit;
 }

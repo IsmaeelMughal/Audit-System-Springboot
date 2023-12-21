@@ -1,8 +1,8 @@
-package com.prototype.auditmangemenetsystem.controllers;
+package com.prototype.auditmanagemenetsystem.controllers;
 
-import com.prototype.auditmangemenetsystem.dtos.ResponseDTO;
-import com.prototype.auditmangemenetsystem.dtos.UserDTO;
-import com.prototype.auditmangemenetsystem.services.UserService;
+import com.prototype.auditmanagemenetsystem.dtos.ResponseDTO;
+import com.prototype.auditmanagemenetsystem.dtos.UserDTO;
+import com.prototype.auditmanagemenetsystem.services.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
