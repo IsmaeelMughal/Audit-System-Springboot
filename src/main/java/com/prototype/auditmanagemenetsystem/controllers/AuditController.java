@@ -17,10 +17,10 @@ public class AuditController {
 
     private final AuditService auditService;
 
-    @GetMapping
-    public ResponseDTO<List<AuditDTO>> getAllAudits(){
-        return auditService.getAllAudits();
-    }
+//    @GetMapping
+//    public ResponseDTO<List<AuditDTO>> getAllAudits(){
+//        return auditService.getAllAudits();
+//    }
 
     @PostMapping("/add")
     public ResponseDTO<AuditDTO> addAudit(@RequestBody AuditDTO auditDto)
@@ -32,6 +32,18 @@ public class AuditController {
             log.error("Exception occured while adding resident " + e.getLocalizedMessage());
         }
 
+        return responseDTO;
+    }
+
+    @GetMapping("/all")
+    public ResponseDTO<List<AuditDTO>> getAllAudits(){
+        ResponseDTO<List<AuditDTO>> responseDTO = new ResponseDTO<>();
+        try {
+            responseDTO = auditService.getAllAudits();
+        }
+        catch (Exception e){
+            log.error("Exception occurred while fetching audits " + e.getLocalizedMessage());
+        }
         return responseDTO;
     }
 }
